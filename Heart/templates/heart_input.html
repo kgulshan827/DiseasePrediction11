@@ -1,3 +1,6 @@
+
+
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,6 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
 
     <title>Disease Prediction</title>
   </head>
@@ -19,12 +24,48 @@
       transform: translate(-50%, -50%);
       font-family: Arial, Helvetica, sans-serif;
       background-color: rgb(230, 239, 245);
+      justify-content: space-between;
     }
+  .nav{
+    align-items: left;
+    text-align: left;
+    margin-right: 1000px;
+    
+  }
+  @media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .nav {width: 58.33%;}
+  .center {width: 40.66%;}
+ 
+}
+/* For mobile phones: */
+[class*="center"] {
+  width: 100%;
+}
+[class*="nav"] {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .nav {width: 58.33%;}
+  .center {width: 45%;}
+  
+}
   </style>
+
+<div class="nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}" >Home</a>
+
+    </div>
+  </nav>
+</div>
   <body class="center">
+   
     <form action="heart_result">
         {% csrf_token %}
-    
+       
         <div class="form-group">
           <input class="form-control" placeholder="Age in number" required type="text" name="age">
         </div>

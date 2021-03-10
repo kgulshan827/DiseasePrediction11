@@ -4,7 +4,8 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler,MinMaxScaler
 from joblib import load
 # Create your views here.
-
+def index(request):
+    return render (request,'index.html')
 def heart(request):
     return render (request,'heart_input.html')
 

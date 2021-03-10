@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Disease Prediction System</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- Responsive stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
+
+    <!-- Favicon -->
+    <link href="{%  static 'static/img/favicon.png' %}" rel="shortcut icon" type="image/png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+ 
+<body>
+
+    <div class="preloader"></div>
+      {% include 'navbar.html' %}
+    <!-- Header navbar end -->
+
+    <!-- Start  bootstrap-touch-slider Slider -->
+    <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+            <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper For Slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Third Slide -->
+            <div class="item active">
+
+                <!-- Slide Background -->
+                <img src="static/img/heartdisease.png" alt="Slider Images"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+
+                <div class="slide-text slide_style_left">
+                    <h1 data-animation="animated bounceInDown"> Predict<span class="color-defult"> Risk of Having Heart</span> disease.</h1>
+                    </div>
+            </div>
+            <!-- End of Slide -->
+
+            <!-- Second Slide -->
+            <div class="item">
+            
+                <!-- Slide Background -->
+                <img src="static/img/bg/2.jpg" alt="Slider Images" class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+                <!-- Slide Text Layer -->
+                <div class="slide-text slide_style_center">
+                    <h1 data-animation="animated bounceInDown"> Predict<span class="color-defult"> Risk of Having Diabetes</span> disease.</h1>
+                  
+                </div>
+            </div>
+            <!-- End of Slide -->
+            
+            <!-- Third Slide -->
+            <div class="item">
+            
+                <!-- Slide Background -->
+                <img src="static/img/image.jpg" alt="Slider Images"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+                <!-- Slide Text Layer -->
+                <div class="slide-text slide_style_left">
+                    <h1 data-animation="animated bounceInDown"> Predict<span class="color-defult"> Risk of Having Cancer </span> disease.</h1>
+                    </div>
+            </div>
+            <!-- End of Slide -->
+
+
+        </div><!-- End of Wrapper For Slides -->
+
+        <!-- Left Control -->
+        <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <!-- Right Control -->
+        <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div> <!-- End  bootstrap-touch-slider Slider -->
+
+    <!-- welcome start -->
+    <section class="about animatedParent animateOnce">
+        <div class="container">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="text-center">
+                            <h2>Welcome To <span class="color-defult">Healthcare</span></h2>
+                            <div class="line-border-center bg-defult"></div>
+                    <p>Predict Risk of Having Disease on time with more than 90 percent accuracy</p> </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="about-feature">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="appointment-item style-gray animated fadeInLeftShort slow delay-250">
+                                <i class="flaticon-ribbon"></i>
+                                <h5><a href="#">Application </a></h5>
+                                <div class="line-border-center bg-gray"></div>
+                                <p>To remove the dependencies on the doctors.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="appointment-item style-gray animated fadeInLeftShort slow delay-500">
+                                <i class="flaticon-cardiogram"></i>
+                                <h5><a href="#">Application</a></h5>
+                                <div class="line-border-center bg-gray"></div>
+                                <p>To help out the poor and helpless people with the normal medical checkup</p>
+                            
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="appointment-item style-gray animated fadeInLeftShort slow delay-500">
+                                <i class="flaticon-cardiogram"></i>
+                                <h5><a href="#">Application</a></h5>
+                                <div class="line-border-center bg-gray"></div>
+                                <p>To extend the role of the technology in the medical field</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- welcome end -->
+
+    
+    <!-- Team end -->
+
+    <!-- Counter start -->
+   
+
+   <footer class="me" style="background-color:rgb(0, 50, 120);padding:50px">
+       <div class="contact" style="text-decoration-color: blueviolet;">
+        <p>Contact me:+91-9674722157</p>
+        <p>kgulshan827@gmail.com</p>
+
+        
+        
+       </div>
+   </footer>
+  
+    <a href="#" class="scrollup"><i class="pe-7s-up-arrow" aria-hidden="true"></i></a>
+    <!-- jQuery -->
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+
+    <!-- all plugins and JavaScript -->
+    <script type="text/javascript" src="static/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="static/js/css3-animate-it.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap-dropdownhover.min.js"></script>
+    <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="static/js/gallery.js"></script>
+    <script type="text/javascript" src="static/js/player.min.js"></script>
+    <script type="text/javascript" src="static/js/retina.js"></script>
+    <script type="text/javascript" src="static/js/comming-soon.js"></script>
+
+    <!-- Main Custom JS -->
+    <script type="text/javascript" src="static/js/script.js"></script>
+
+
+</body>
+
+
+
+</html>
