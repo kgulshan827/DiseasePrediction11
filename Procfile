@@ -1,0 +1,1 @@
+web: gunicorn Diseaseprediction.wsgi --log-file -

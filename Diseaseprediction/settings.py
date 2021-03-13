@@ -27,7 +27,7 @@ SECRET_KEY = '6b(vp3t#g#-1!78@o8=21837-mwpjen7n&hq0%zb1_oz1!==h^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['diseasepredictionsystem1.herokuapp.com','localhost','127.0.0.1']
 
 
 # Application definition
