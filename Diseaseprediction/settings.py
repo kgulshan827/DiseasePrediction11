@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '6b(vp3t#g#-1!78@o8=21837-mwpjen7n&hq0%zb1_oz1!==h^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['diseasepredictionsystem1.herokuapp.com','localhost','127.0.0.1']
 
@@ -122,10 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-  os.path.join(BASE_DIR,'static')
-]
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
